@@ -5,7 +5,7 @@ from .form import LoginForm
 def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
-        form.save
+        form.save()
         return redirect('haha')
     form = LoginForm()
     
